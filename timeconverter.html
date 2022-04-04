@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+				<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+	<!-- <meta name="width=device-width, initial-scale=1.0"> -->
+	<meta charset="UTF-8">
+	<title>Time converter</title>
+
+	
+</head>
+
+<style>
+								body{
+				background: url(./b.jpg);
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-position: centre centre;
+			 min-height: 600px;
+			 max-width: 600px;
+			 text-align: center;
+			 color: black;
+			 font-weight: bolder;
+			 font-size: 20px;
+								}
+								
+				h1{
+				margin-top: 80px;
+				text-align: center;
+			 color: black;
+			 font-weight: bolder;
+			 font-style: italic;
+			
+			h6{
+							font-size: 5px;
+							padding-top: 160px;
+			}
+			
+</style>
+<body>						
+				<h1>Time converter</h1>
+				
+<label for="">Input in Hours:</label>
+
+
+<div class="input">
+				<input type="number" oninput="timeConverter(this.value)" onchange="timeConverter(this.value)" />
+
+<p>Minutes: <span id="outputminutes"></span></p>
+</div>
+
+<p>Seconds: <span id="outputseconds"></span></p>
+</div>
+
+
+<h6>
+				Copyright 2021. 
+				Rahman Inc.
+</h6>
+
+
+</body>
+</html>
+
+
+<script>
+  alert
+("Welcome to Rahman\'s Time Converter")
+function timeConverter(numVal){
+document.getElementById("outputminutes").innerHTML = numVal*60  +  "minutes";
+	document.getElementById("outputseconds").innerHTML = numVal*3600  +  "seconds";
+	
+}
+ </script>
+
